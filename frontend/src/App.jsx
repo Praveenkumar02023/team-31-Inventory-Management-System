@@ -5,6 +5,7 @@ import SidebarLayout from "./layout/SidebarLayout";
 import Landing from "./pages/Landing";
 import Auth from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
+import SupplierManagement from "./pages/supply-management";
 
 function App() {
   return (
@@ -26,9 +27,15 @@ function App() {
         */}
       </Route>
 
-      {/* Fallback: any unknown route → Landing */}
-      <Route path="*" element={<Landing />} />
-    </Routes>
+          {/* Other pages will come here */}
+          {/* <Route path="/products" element={<Products />} /> */}
+          {/* <Route path="/suppliers" element={<Suppliers />} /> */}
+          {/* <Route path="/stock-in" element={<StockIn />} /> */}
+          {/* <Route path="/stock-out" element={<StockOut />} /> */}
+          {/* <Route path="/reports" element={<Reports />} /> */}
+          {/* <Route path="/users" element={<Users />} /> */}
+          { <Route path="/suppliers" element={<SupplierManagement />} /> }
+        </Routes>
   );
 }
 
