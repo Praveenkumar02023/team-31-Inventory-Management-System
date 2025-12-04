@@ -3,6 +3,7 @@ import SidebarLayout from "./layout/SidebarLayout";
 
 // Pages
 import Dashboard from "./pages/Dashboard";
+import SupplierManagement from "./pages/supply-management";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           {/* <Route path="/stock-out" element={<StockOut />} /> */}
           {/* <Route path="/reports" element={<Reports />} /> */}
           {/* <Route path="/users" element={<Users />} /> */}
+          { <Route path="/suppliers" element={<SupplierManagement />} /> }
         </Route>
 
       </Routes>
