@@ -1,16 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SidebarLayout from "./layout/SidebarLayout";
+
+// Pages
+import Dashboard from "./pages/Dashboard";
 
 function App() {
-  
-  return <div>
+  return (
+    <Router>
+      <Routes>
 
-    <h1 className='text-9xl' >hi there</h1>
+        {/* Sidebar Layout */}
+        <Route element={<SidebarLayout />}>
+          <Route path="/" element={<Dashboard />} />
 
-  </div>
+          {/* Other pages will come here */}
+          {/* <Route path="/products" element={<Products />} /> */}
+          {/* <Route path="/suppliers" element={<Suppliers />} /> */}
+          {/* <Route path="/stock-in" element={<StockIn />} /> */}
+          {/* <Route path="/stock-out" element={<StockOut />} /> */}
+          {/* <Route path="/reports" element={<Reports />} /> */}
+          {/* <Route path="/users" element={<Users />} /> */}
+        </Route>
 
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
