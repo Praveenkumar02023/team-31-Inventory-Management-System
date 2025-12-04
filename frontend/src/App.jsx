@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SidebarLayout from "./layout/SidebarLayout";
+import ProductManagement from "./pages/productmanagement";
 
 // Pages
 import Dashboard from "./pages/Dashboard";
@@ -21,7 +22,6 @@ function App() {
           {/* <Route path="/reports" element={<Reports />} /> */}
           {/* <Route path="/users" element={<Users />} /> */}
         </Route>
-
       </Routes>
     </Router>
   );
