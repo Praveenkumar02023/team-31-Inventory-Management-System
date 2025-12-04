@@ -17,14 +17,8 @@ function App() {
       {/* Pages with sidebar layout */}
       <Route element={<SidebarLayout />}>
         <Route path="/dashboard" element={<Dashboard />} />
-        {/* Future routes with sidebar:
-            <Route path="/products" element={<Products />} />
-            <Route path="/suppliers" element={<Suppliers />} />
-            <Route path="/stock-in" element={<StockIn />} />
-            <Route path="/stock-out" element={<StockOut />} />
-            <Route path="/reports" element={<Reports />} />
-            <Route path="/users" element={<Users />} />
-        */}
+            <Route path="/products" element={<ProductManagement />} />
+        
       </Route>
 
       {/* Fallback: any unknown route → Landing */}
